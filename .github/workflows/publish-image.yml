@@ -32,5 +32,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/shezis//mob-gpt:latest
+          tags: docker.pkg.github.com/shezis/mob-gpt:latest
           platforms: linux/amd64,linux/arm64
