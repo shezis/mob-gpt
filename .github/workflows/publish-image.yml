@@ -22,7 +22,7 @@ jobs:
       - name: Login to GitHub Packages
         uses: docker/login-action@v1
         with:
-          registry: ghcr.io
+          registry: docker.pkg.github.com
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
@@ -32,5 +32,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: https://ghcr.io/shezis/mob-gpt:latest
+          tags: master
           platforms: linux/amd64,linux/arm64
